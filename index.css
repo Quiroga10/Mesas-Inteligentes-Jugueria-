@@ -1,0 +1,220 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600&display=swap');
+
+*{
+    font-family: 'Nunito', sans-serif;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    transition: all .2s linear;
+    text-transform: capitalize;
+}
+html{
+    font-size: 62.5%;
+}
+body{
+    background-color: #fff;
+}
+/* LOGO JUGUERIA */
+.container_logo{
+    max-width: 90%;
+    position: absolute;
+    top: 30px;
+    margin-left: 50px;
+}
+/* MENU PRINCIPAL */
+.menu_principal{
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 3rem 2rem;
+    /* background: #eee; */
+    margin-left:350px;
+    position: relative;
+}
+.menu_principal .titulo_catalogo{
+    font-size:3.5rem;
+    margin-left:50px;
+    color:#444;
+    margin-bottom: 3rem;
+    text-transform: uppercase;
+    text-align: center;
+}
+.menu_principal .productos-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+    gap: 2rem;
+}
+.menu_principal .productos-container .producto{
+    text-align: center;
+    padding: 3rem 2rem;
+    background: #fff;
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0,.1);
+    outline: .1rem solid #ccc;
+    outline-offset: -1.5rem;
+    cursor: pointer;
+}
+.menu_principal .productos-container .producto:hover{
+    outline: .2rem solid #222;
+    outline-offset: 0;
+}
+.menu_principal .productos-container .producto img{
+    height:10rem;
+}
+.menu_principal .productos-container .producto:hover img{
+    transition:scale(.9);
+}
+.menu_principal .productos-container .producto h3{
+    padding:.5rem 0;
+    font-size: 2rem;
+    color: #444;
+}
+.menu_principal .productos-container .producto:hover h3{
+    color: #27ae60;
+}
+.menu_principal .productos-container .producto .precio{
+    font-size: 2rem;
+    color: #444;
+}
+
+@media (max-width:991px) {
+    html{
+        font-size:55%;
+    }
+}
+@media (max-width:768px){
+    img{
+        height:25rem;
+    }
+}
+@media (max-width:450px){
+    html{
+        font-size:50%;
+    }
+}
+/* BOTONES DEL MENU PRINCIPAL */
+.btn-neon{
+    position: relative;
+    background:#27ae60;
+    display: inline-block;
+    top: 10px;
+    padding: 15px 30px;
+    color: #fff;
+    letter-spacing: 4px;
+    font-size:14px;
+    text-decoration: none;
+    overflow: hidden;
+    transition: 0.2s;
+}
+.btn-neon:hover{
+    background: #a945c7;
+    box-shadow: 0 0 1px #a945c7, 0 0 40px
+    #a945c7, 0 0 15px #a945c7;
+    transition-delay:.1s;
+}
+
+/* SIDEBAR - MENU LATERAL */
+.wrapper{
+    display: flex;
+    position: relative;
+}
+.wrapper .sidebar{
+    position: relative;
+    top: -687px;
+    width: 250px;
+    height: 1px;
+    background:#fff;
+    margin-left: -280px;
+    padding: 0px 0;
+
+}
+.wrapper .sidebar h2{
+    color: #444;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 30px;
+}
+.wrapper .sidebar ul li{
+    padding:15px;
+    border-bottom: 1px solid rgba(0,0,0,0.05);
+    border-top: 1px solid rgba(225,225,225,0.05); 
+}
+.wrapper .sidebar ul li a{
+    color: #bdb8d7;
+    display: inline-block;
+    top: 50px;
+}
+.wrapper .sidebar ul li a .ico{
+    width: 35px;
+    height:4rem;
+}
+.wrapper .sidebar ul li:hover{
+    background:#27ae60;
+}
+.wrapper .sidebar ul li:hover a{
+    color: #fff;
+}
+.wrapper .sidebar .social_media{
+    position: absolute;
+    bottom: -693px;
+    left: 95%;
+    transform: translateX(-90%);
+    display:flex;
+}
+.wrapper .sidebar .social_media a{
+    display: block;
+    width: 50px;
+    /* background:#594f8d; */
+    height: 50px;
+    line-height: 40px;
+    text-align: center;
+    margin: 0 20px;
+    color: #bdb8d7;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+}
+@media (max-width: 2560px) {
+    html{
+        font-size:75%;
+    }
+}
+@media (max-width:1336px) {
+    .wrapper .sidebar{
+        top: -959px;
+        height: 930px;
+    }
+    .menu_principal .productos-container .producto img{
+        height:10rem;
+    }
+}
+@media (max-width:1025px){
+    .wrapper .sidebar{
+        top: -1989px;
+        height: 900px;
+    }
+}
+
+/* Orden de Pedido */
+.order{
+    max-width: 90%;
+    min-width: 65%;
+    margin-left:1050px;
+    position: absolute;
+    top: 195px;
+}
+.order-table{
+    width: 100%;
+    text-align: center;
+    font-size:larger;
+    padding-bottom:20px;
+    border-bottom: 1px solid #4e4e4e;
+}
+.order-actions{
+    display:flex;
+    justify-content:center;
+}
+.order-actions p{
+    padding:20px;
+}
+.order-actions p:hover{
+    cursor:pointer;
+}
