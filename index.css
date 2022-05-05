@@ -218,3 +218,40 @@ body{
 .order-actions p:hover{
     cursor:pointer;
 }
+
+/*Button Pagar*/
+button{
+    background:#ad1cb8;
+    display: inline-block;
+    cursor: pointer;
+    margin-left: 1315px;
+    position:absolute;
+    top: 515px;
+    padding: 15px 30px;
+    color: #fff;
+    letter-spacing: 4px;
+    font-size:14px;
+    text-decoration: none;
+    overflow: hidden;
+    transition: 0.2s;
+}
+button:hover{
+    background: #27ae60;
+    box-shadow: 0 0 1px #27ae60, 0 0 40px
+    #27ae60, 0 0 15px #27ae60;
+    transition-delay:.1s;
+}
+.btn-borrar{
+    background: rgb(243, 18, 18);
+    color: #fff;
+    width: 80px;
+    height:50px;
+    top:14px;
+    margin-left:50px;
+}
+.btn-confirmar{
+    background: rgb(45, 140, 228);
+    color: #fff;
+    width: 80px;
+    height:50px;
+}
