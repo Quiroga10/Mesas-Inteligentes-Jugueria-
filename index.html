@@ -7,6 +7,7 @@
     <title>Mesa Inteligente Jugueria de</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
     <link rel="stylesheet" href="index.css">
+    <script src="script.js"></script>
 </head>
 <body>
     <div class="container_logo">
@@ -15,7 +16,7 @@
     <div class="menu_principal">
         <h3 class="titulo_catalogo"> Catalogo de Productos</h3>
         <div class="productos-container">
-            <div class="producto" data-name="p-1">
+            <div class="producto" category="Jugos">
                 <img src="jugo_naranja.jpg" alt="jugo de papaya">
                 <h3>Jugo de Naranja</h3>
                 <div class="precio">S/2.50</div>
@@ -23,67 +24,69 @@
                     ENVIAR
                 </a>
             </div>
-            <div class="producto" data-name="p-2">
-                <img src="jugo_naranja.jpg" alt="jugo de naranja">
-                <h3>Jugo de Papaya</h3>
+            <div class="producto" category="Hamburguesa">
+                <img src="Hamburguesa McDonal´s queso.jpeg" alt="Hamburguesa de McDonald´s con queso">
+                <h3>Hamburguesa con queso</h3>
+                <div class="precio">S/10.50</div>
+                <a href="#" class="btn-neon">
+                    ENVIAR
+                </a>
+            </div>
+            <div class="producto" category="Cafes">
+                <img src="cafe_con_leche.jpeg" alt="Leche con Café">
+                <h3>Leche con Café</h3>
+                <div class="precio">S/5.50</div>
+                <a href="#" class="btn-neon">
+                    ENVIAR
+                </a>
+            </div>
+            <div class="producto" category="Bebidas">
+                <img src="Coca Cola 2-5lt.jpg" alt="COCA COLA DESECHABLE 2.5 LT ">
+                <h3>Coca Cola personal</h3>
                 <div class="precio">S/2.00</div>
                 <a href="#" class="btn-neon">
                     ENVIAR
                 </a>
             </div>
-            <div class="producto" data-name="p-3">
-                <img src="jugo_naranja.jpg" alt="jugo de papaya">
-                <h3>Jugo de Pera</h3>
-                <div class="precio">S/2.50</div>
+            <div class="producto" category="Sandwich">
+                <img src="sandwich_milanesa.jpeg" alt="sandwich de milanesa">
+                <h3>Sandwich de Milanesa</h3>
+                <div class="precio">S/5.50</div>
                 <a href="#" class="btn-neon">
                     ENVIAR
                 </a>
             </div>
-            <div class="producto" data-name="p-4">
-                <img src="jugo_naranja.jpg" alt="jugo de naranja">
-                <h3>Jugo de Uva</h3>
-                <div class="precio">S/2.00</div>
-                <a href="#" class="btn-neon">
-                    ENVIAR
-                </a>
-            </div>
-            <div class="producto" data-name="p-5">
-                <img src="jugo_naranja.jpg" alt="jugo de papaya">
-                <h3>Jugo de Melon</h3>
-                <div class="precio">S/2.50</div>
-                <a href="#" class="btn-neon">
-                    ENVIAR
-                </a>
-            </div>
-            <div class="producto" data-name="p-6">
-                <img src="jugo_naranja.jpg" alt="jugo de naranja">
-                <h3>Jugo de Platano</h3>
-                <div class="precio">S/2.00</div>
+            <div class="producto" category="Postres">
+                <img src="torta_3_leches.jpeg" alt="torta_3_leches">
+                <h3>Torta de tres leches</h3>
+                <div class="precio">S/5.50</div>
                 <a href="#" class="btn-neon">
                     ENVIAR
                 </a>
         </div>
+        <div class="slider__btn slider__btn--right">&#60</div>
+        <div class="slider__btn slider__btn--left">&#62</div>
     </div>
+
     <div class="wrapper">
         <div class="sidebar">
             <ul>
-                <li><a href="#"><img class="ico" src="jugos.png">   Jugos Naturales</a></li>
-                <li><a href="#"><img class="ico" src="hamburguesas.png">Hamburguesas</a></li>
-                <li><a href="#"><img class="ico" src="cafes.png">Cafes</a></li>
-                <li><a href="#"><img class="ico" src="bebidas.png">Bebidas</a></li>
-                <li><a href="#"><img class="ico" src="sandwich.png">Sandwich</a></li>
-                <li><a href="#"><img class="ico" src="postres.png">Postres</a></li>
-                <li><a href="#"><img class="ico" src="galletas.png">Galletas</a></li>
+                <li><a href="#" id="categoryJugos" category="Jugos"><img class="ico" src="jugos.png"><br>Jugos Naturales</a></li>
+                <li><a href="#" id="categoryHamburguesas" category="Hamburguesas"><img class="ico" src="hamburguesas.png"><br>Hamburguesas</a></li>
+                <li><a href="#" id="categoryCafes" category="Cafes"><img class="ico" src="cafes.png"><br>Cafes</a></li>
+                <li><a href="#" id="categoryBebidas" category="Bebidas"><img class="ico" src="bebidas.png"><br>Bebidas</a></li>
+                <li><a href="#" id="categorySandwich" category="Sandwich"><img class="ico" src="sandwich.png"><br>Sandwich</a></li>
+                <li><a href="#" id="categoryPostres" category="Psotres"><img class="ico" src="postres.png"><br>Postres</a></li>
+                <li><a href="#" id="categoryGalletas" category="Galletas"><img class="ico" src="galletas.png"><br>Galletas</a></li>
             </ul>
-
-           <div class="social_media">
-               <a href="#"><img class="ico" src="facebook.png"></a>
-               <a href="#"><img class="ico" src="instagram.png"></a>
-               <a href="#"><img class="ico" src="twitter.png"></a>
-           </div>
+            <div class="social_media">
+                <a href="#"><img class="ico" src="facebook.png"></a>
+                <a href="#"><img class="ico" src="instagram.png"></a>
+                <a href="#"><img class="ico" src="twitter.png"></a>
+            </div>
         </div>
     </div>
-    
+
     <!--  ORDEN DE PAGO-->
     <div id="order" class="order">
         <table class="order-table">
@@ -109,7 +112,7 @@
             </tr>
         </table>
         <div class="order-actions">
-            <p class="btn-borrar">Borrar</p>
+            <p class="btn-borrar" id="btn-right">Borrar</p>
             <p class="btn-confirmar">Confirmar</p>
         </div>
     </div>

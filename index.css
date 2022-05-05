@@ -19,7 +19,7 @@ body{
 .container_logo{
     max-width: 90%;
     position: absolute;
-    top: 30px;
+    top: 5px;
     margin-left: 50px;
 }
 /* MENU PRINCIPAL */
@@ -30,9 +30,11 @@ body{
     /* background: #eee; */
     margin-left:350px;
     position: relative;
+    bottom: 10px;
 }
 .menu_principal .titulo_catalogo{
     font-size:3.5rem;
+    margin-top: 14px;
     margin-left:50px;
     color:#444;
     margin-bottom: 3rem;
@@ -59,6 +61,7 @@ body{
 }
 .menu_principal .productos-container .producto img{
     height:10rem;
+    object-fit: cover;
 }
 .menu_principal .productos-container .producto:hover img{
     transition:scale(.9);
@@ -119,7 +122,7 @@ body{
 }
 .wrapper .sidebar{
     position: relative;
-    top: -687px;
+    top: -757px;
     width: 250px;
     height: 1px;
     background:#fff;
@@ -136,26 +139,29 @@ body{
 .wrapper .sidebar ul li{
     padding:15px;
     border-bottom: 1px solid rgba(0,0,0,0.05);
-    border-top: 1px solid rgba(225,225,225,0.05); 
+    border-top: 1px solid rgba(225,225,225,0.05);
 }
 .wrapper .sidebar ul li a{
     color: #bdb8d7;
     display: inline-block;
     top: 50px;
+    font-weight: bold;
 }
 .wrapper .sidebar ul li a .ico{
     width: 35px;
     height:4rem;
+    font-weight: bold;
 }
 .wrapper .sidebar ul li:hover{
     background:#27ae60;
+    border-radius: 15px;
 }
 .wrapper .sidebar ul li:hover a{
     color: #fff;
 }
 .wrapper .sidebar .social_media{
     position: absolute;
-    bottom: -693px;
+    bottom: -793px;
     left: 95%;
     transform: translateX(-90%);
     display:flex;
@@ -224,7 +230,7 @@ button{
     background:#ad1cb8;
     display: inline-block;
     cursor: pointer;
-    margin-left: 1315px;
+    margin-left: 1345px;
     position:absolute;
     top: 515px;
     padding: 15px 30px;
@@ -241,17 +247,55 @@ button:hover{
     #27ae60, 0 0 15px #27ae60;
     transition-delay:.1s;
 }
+.order-actions{
+    margin-left:50px;
+}
+p{
+    text-align:center;
+}
 .btn-borrar{
     background: rgb(243, 18, 18);
     color: #fff;
-    width: 80px;
+    width: 90px;
     height:50px;
     top:14px;
-    margin-left:50px;
+    margin: 14px;
+    font-weight: bold;
+    border-radius: 8px;
 }
 .btn-confirmar{
     background: rgb(45, 140, 228);
     color: #fff;
-    width: 80px;
+    width: 90px;
     height:50px;
+    margin: 14px;
+    font-weight: bold;
+    border-radius: 8px;
+}
+
+/*SLIDER button*/
+.slider__btn{
+    display: inline-block;
+    width:50px;
+    height:50px;
+    top: 90%;
+    /* transform: translateY(-50%); */
+    font-size:40px;
+    margin-left: 305px;
+    font-weight: bold;
+    text-align: center;
+    border-radius:50%;
+    cursor: pointer;
+    top: 50px;
+}
+.slider__btn:hover{
+    background:#a8a1a1;
+}
+.slider__btn--left{
+    left:10px;
+    background:#827e7e;
+}
+.slider__btn--right {
+    right:10px;
+    background:#827e7e;
 }
