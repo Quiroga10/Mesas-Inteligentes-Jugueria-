@@ -5,65 +5,82 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mesa Inteligente Jugueria de</title>
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="skeleton.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
     <link rel="stylesheet" href="index.css">
-    <script src="script.js"></script>
 </head>
 <body>
     <div class="container_logo">
         <img src="logo.png">
     </div>
-    <div class="menu_principal">
+    <div class="menu_principal" id="lista-platillos">
         <h3 class="titulo_catalogo"> Catalogo de Productos</h3>
         <div class="productos-container">
             <div class="producto" category="Jugos">
-                <img src="jugo_naranja.jpg" alt="jugo de papaya">
-                <h3>Jugo de Naranja</h3>
-                <div class="precio">S/2.50</div>
-                <a href="#" class="btn-neon">
+                <img src="jugo_naranja.jpg" alt="jugo de papaya" class="imagen-platillo u-full-width">
+                <h3>Jugo de Naranja Personal</h3>
+                <p class="precio">S/2.50</p>
+                <a href="#" class="btn-neon" class="u-full-width button-primary button input agregar-carrito" data-id="1">
                     ENVIAR
                 </a>
             </div>
             <div class="producto" category="Hamburguesa">
-                <img src="Hamburguesa McDonal´s queso.jpeg" alt="Hamburguesa de McDonald´s con queso">
-                <h3>Hamburguesa con queso</h3>
-                <div class="precio">S/10.50</div>
-                <a href="#" class="btn-neon">
+                <img src="Hamburguesa McDonal´s queso.jpeg" alt="Hamburguesa de McDonald´s con queso" class="imagen-platillo u-full-width">
+                <h3>Hamburguesa de queso</h3>
+                <p class="precio">S/10.50</p>
+                <a href="#" class="btn-neon" class="u-full-width button-primary button input agregar-carrito" data-id="2">
                     ENVIAR
                 </a>
             </div>
             <div class="producto" category="Cafes">
-                <img src="cafe_con_leche.jpeg" alt="Leche con Café">
-                <h3>Leche con Café</h3>
-                <div class="precio">S/5.50</div>
-                <a href="#" class="btn-neon">
+                <img src="cafe_con_leche.jpeg" alt="Leche con Café" class="imagen-platillo u-full-width">
+                <h3>Leche con Café y crema</h3>
+                <p class="precio">S/5.50</p>
+                <a href="#" class="btn-neon" class="u-full-width button-primary button input agregar-carrito" data-id="3">
                     ENVIAR
                 </a>
             </div>
             <div class="producto" category="Bebidas">
-                <img src="Coca Cola 2-5lt.jpg" alt="COCA COLA DESECHABLE 2.5 LT ">
-                <h3>Coca Cola personal</h3>
-                <div class="precio">S/2.00</div>
-                <a href="#" class="btn-neon">
+                <img src="Coca Cola 2-5lt.jpg" alt="COCA COLA DESECHABLE 2.5 LT " class="imagen-platillo u-full-width">
+                <h3>Coca Cola 1/2lt personal</h3>
+                <p class="precio">S/2.00</p>
+                <a href="#" class="btn-neon" class="u-full-width button-primary button input agregar-carrito" data-id="4">
                     ENVIAR
                 </a>
             </div>
             <div class="producto" category="Sandwich">
-                <img src="sandwich_milanesa.jpeg" alt="sandwich de milanesa">
+                <img src="sandwich_milanesa.jpeg" alt="sandwich de milanesa" class="imagen-platillo u-full-width">
                 <h3>Sandwich de Milanesa</h3>
-                <div class="precio">S/5.50</div>
-                <a href="#" class="btn-neon">
+                <p class="precio">S/5.50</p>
+                <a href="#" class="btn-neon" class="u-full-width button-primary button input agregar-carrito" data-id="5">
                     ENVIAR
                 </a>
             </div>
             <div class="producto" category="Postres">
-                <img src="torta_3_leches.jpeg" alt="torta_3_leches">
+                <img src="torta_3_leches.jpeg" alt="torta_3_leches" class="imagen-platillo u-full-width">
                 <h3>Torta de tres leches</h3>
-                <div class="precio">S/5.50</div>
-                <a href="#" class="btn-neon">
+                <p class="precio">S/5.50</p>
+                <a href="#" class="btn-neon" class="u-full-width button-primary button input agregar-carrito" data-id="6">
                     ENVIAR
                 </a>
-        </div>
+            </div>
+            <div class="producto" category="Postres">
+                <img src="donuts.jpeg" alt="torta_3_leches" class="imagen-platillo u-full-width">
+                <h3>Donut´s pink con chispas</h3>
+                <p class="precio">S/5.50</p>
+                <a href="#" class="btn-neon" class="u-full-width button-primary button input agregar-carrito" data-id="7">
+                    ENVIAR
+                </a>
+            </div>
+            <div class="producto" category="Postres">
+                <img src="galleta_chocolate.jpg" alt="torta_3_leches" class="imagen-platillo u-full-width">
+                <h3>Galletas chispas de chocolate</h3>
+                <p class="precio">S/5.50</p>
+                <a href="#" class="btn-neon" class="u-full-width button-primary button input agregar-carrito" data-id="8">
+                    ENVIAR
+                </a>
+            </div>
         <div class="slider__btn slider__btn--right">&#60</div>
         <div class="slider__btn slider__btn--left">&#62</div>
     </div>
@@ -71,13 +88,13 @@
     <div class="wrapper">
         <div class="sidebar">
             <ul>
-                <li><a href="#" id="categoryJugos" category="Jugos"><img class="ico" src="jugos.png"><br>Jugos Naturales</a></li>
-                <li><a href="#" id="categoryHamburguesas" category="Hamburguesas"><img class="ico" src="hamburguesas.png"><br>Hamburguesas</a></li>
-                <li><a href="#" id="categoryCafes" category="Cafes"><img class="ico" src="cafes.png"><br>Cafes</a></li>
-                <li><a href="#" id="categoryBebidas" category="Bebidas"><img class="ico" src="bebidas.png"><br>Bebidas</a></li>
-                <li><a href="#" id="categorySandwich" category="Sandwich"><img class="ico" src="sandwich.png"><br>Sandwich</a></li>
-                <li><a href="#" id="categoryPostres" category="Psotres"><img class="ico" src="postres.png"><br>Postres</a></li>
-                <li><a href="#" id="categoryGalletas" category="Galletas"><img class="ico" src="galletas.png"><br>Galletas</a></li>
+                <li><a href="#" category="Jugos"><img class="ico" src="jugos.png"><br>Jugos Naturales</a></li>
+                <li><a href="#" category="Hamburguesas"><img class="ico" src="hamburguesas.png"><br>Hamburguesas</a></li>
+                <li><a href="#" category="Cafes"><img class="ico" src="cafes.png"><br>Cafes</a></li>
+                <li><a href="#" category="Bebidas"><img class="ico" src="bebidas.png"><br>Bebidas</a></li>
+                <li><a href="#" category="Sandwich"><img class="ico" src="sandwich.png"><br>Sandwich</a></li>
+                <li><a href="#" category="Psotres"><img class="ico" src="postres.png"><br>Postres</a></li>
+                <li><a href="#" category="Galletas"><img class="ico" src="galletas.png"><br>Galletas</a></li>
             </ul>
             <div class="social_media">
                 <a href="#"><img class="ico" src="facebook.png"></a>
@@ -86,38 +103,29 @@
             </div>
         </div>
     </div>
-
-    <!--  ORDEN DE PAGO-->
-    <div id="order" class="order">
-        <table class="order-table">
-            <h1>Orden de Pedido</h1>
-            <h2>Total: S/7.50</h2>
-            <tr>
-                <th>Producto</th>
-                <th>Cantidad</th>
-                <th>Precio c/u</th>
-                <th>SubTotal</th>
-            </tr>
-            <tr>
-                <td>Jugo de Pera</td>
-                <td>2</td>
-                <td>S/2.50</td>
-                <td>S/5.00</td>
-            </tr>
-            <tr>
-                <td>Jugo de Papaya</td>
-                <td>1</td>
-                <td>S/2.50</td>
-                <td>S/2.50</td>
-            </tr>
-        </table>
-        <div class="order-actions">
-            <p class="btn-borrar" id="btn-right">Borrar</p>
-            <p class="btn-confirmar">Confirmar</p>
-        </div>
+    <div class="two columns u-pull-right">
+        <ul>
+            <li class="submenu">
+                <div id="carrito">
+                    <p class="vacio">Pedido vacio</p>
+                    <table id="lista-carrito" class="u-full-width">
+                        <thead>
+                            <tr>
+                                <th>Imagen</th>
+                                <th>Platillos</th>
+                                <th>Precio</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            
+                        </tbody>
+                    </table>
+                    <a href="#" id="vaciar-carrito"
+                    class="button u-full-width">vaciar carrito</a>
+                </div>
+            </li>
+        </ul>
     </div>
-    <div class="page-nav">
-        <button id="checkout" class="button-checkout" onclick="showOrder"()>Pagar</button>
-    </div>
+        <script src="js/app.js"></script>
 </body>
 </html>
