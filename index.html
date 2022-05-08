@@ -2,87 +2,90 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mesa Inteligente Jugueria de</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <link rel="stylesheet" href="normalize.css">
     <link rel="stylesheet" href="skeleton.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
     <link rel="stylesheet" href="index.css">
+    <title>Mesa Inteligente Jugueria de</title>
 </head>
 <body>
     <div class="container_logo">
         <img src="logo.png">
     </div>
-    <div class="menu_principal" id="lista-platillos">
+    <div class="menu_principal">
         <h3 class="titulo_catalogo"> Catalogo de Productos</h3>
         <div class="productos-container">
             <div class="producto" category="Jugos">
-                <img src="jugo_naranja.jpg" alt="jugo de papaya" class="imagen-platillo u-full-width">
-                <h3>Jugo de Naranja Personal</h3>
-                <p class="precio">S/2.50</p>
-                <a href="#" class="btn-neon" class="u-full-width button-primary button input agregar-carrito" data-id="1">
+                <img class="item-image" src="jugo_naranja.jpg" alt="jugo de papaya">
+                <h3 class="item-title">Jugo de Naranja Personal</h3>
+                <h4 class="item-price">S/2.50</h4>
+                <button href="#" class="item-button btn btn-primary addToCart">
                     ENVIAR
-                </a>
+                </button>
             </div>
             <div class="producto" category="Hamburguesa">
-                <img src="Hamburguesa McDonal´s queso.jpeg" alt="Hamburguesa de McDonald´s con queso" class="imagen-platillo u-full-width">
-                <h3>Hamburguesa de queso</h3>
-                <p class="precio">S/10.50</p>
-                <a href="#" class="btn-neon" class="u-full-width button-primary button input agregar-carrito" data-id="2">
+                <img class="item-image" src="Hamburguesa McDonal´s queso.jpeg" alt="Hamburguesa de McDonald´s con queso">
+                <h3 class="item-title">Hamburguesa de queso</h3>
+                <h4 class="item-price">S/2.50</h4>
+                <button href="#" class="item-button btn btn-primary addToCart">
                     ENVIAR
-                </a>
+                </button>
             </div>
             <div class="producto" category="Cafes">
-                <img src="cafe_con_leche.jpeg" alt="Leche con Café" class="imagen-platillo u-full-width">
-                <h3>Leche con Café y crema</h3>
-                <p class="precio">S/5.50</p>
-                <a href="#" class="btn-neon" class="u-full-width button-primary button input agregar-carrito" data-id="3">
+                <img class="item-image" src="cafe_con_leche.jpeg" alt="Leche con Café">
+                <h3 class="item-title">Leche con Café y crema</h3>
+                <h4 class="item-price">S/2.50</h4>
+                <button href="#" class="item-button btn btn-primary addToCart">
                     ENVIAR
-                </a>
+                </button>
             </div>
             <div class="producto" category="Bebidas">
-                <img src="Coca Cola 2-5lt.jpg" alt="COCA COLA DESECHABLE 2.5 LT " class="imagen-platillo u-full-width">
-                <h3>Coca Cola 1/2lt personal</h3>
-                <p class="precio">S/2.00</p>
-                <a href="#" class="btn-neon" class="u-full-width button-primary button input agregar-carrito" data-id="4">
+                <img class="item-image" src="Coca Cola 2-5lt.jpg" alt="COCA COLA DESECHABLE 2.5 LT ">
+                <h3 class="item-title">Coca Cola 1/2lt personal</h3>
+                <h4 class="item-price">S/2.50</h4>
+                <button href="#" class="item-button btn btn-primary addToCart">
                     ENVIAR
-                </a>
+                </button>
             </div>
             <div class="producto" category="Sandwich">
-                <img src="sandwich_milanesa.jpeg" alt="sandwich de milanesa" class="imagen-platillo u-full-width">
-                <h3>Sandwich de Milanesa</h3>
-                <p class="precio">S/5.50</p>
-                <a href="#" class="btn-neon" class="u-full-width button-primary button input agregar-carrito" data-id="5">
+                <img class="item-image" src="sandwich_milanesa.jpeg" alt="sandwich de milanesa">
+                <h3 class="item-title">Sandwich de Milanesa</h3>
+                <h4 class="item-price">S/2.50</h4>
+                <button href="#" class="item-button btn btn-primary addToCart">
                     ENVIAR
-                </a>
+                </button>
             </div>
             <div class="producto" category="Postres">
-                <img src="torta_3_leches.jpeg" alt="torta_3_leches" class="imagen-platillo u-full-width">
-                <h3>Torta de tres leches</h3>
-                <p class="precio">S/5.50</p>
-                <a href="#" class="btn-neon" class="u-full-width button-primary button input agregar-carrito" data-id="6">
+                <img class="item-image" src="torta_3_leches.jpeg" alt="torta_3_leches">
+                <h3 class="item-title">Torta de tres leches</h3>
+                <h4 class="item-price">S/2.50</h4>
+                <button class="item-button btn btn-primary addToCart">
                     ENVIAR
-                </a>
+                </button>
             </div>
             <div class="producto" category="Postres">
-                <img src="donuts.jpeg" alt="torta_3_leches" class="imagen-platillo u-full-width">
-                <h3>Donut´s pink con chispas</h3>
-                <p class="precio">S/5.50</p>
-                <a href="#" class="btn-neon" class="u-full-width button-primary button input agregar-carrito" data-id="7">
+                <img class="item-image" src="donuts.jpeg" alt="torta_3_leches">
+                <h3 class="item-title">Donut´s pink con chispas</h3>
+                <h4 class="item-price">S/2.50</h4>
+                <button href="#" class="item-button btn btn-primary addToCart">
                     ENVIAR
-                </a>
+                </button>
             </div>
             <div class="producto" category="Postres">
-                <img src="galleta_chocolate.jpg" alt="torta_3_leches" class="imagen-platillo u-full-width">
-                <h3>Galletas chispas de chocolate</h3>
-                <p class="precio">S/5.50</p>
-                <a href="#" class="btn-neon" class="u-full-width button-primary button input agregar-carrito" data-id="8">
+                <img class="item-image" src="galleta_chocolate.jpg" alt="torta_3_leches">
+                <h3 class="item-title">Galletas chispas de chocolate</h3>
+                <h4 class="item-price">S/2.50</h4>
+                <button href="#" class="item-button btn btn-primary addToCart">
                     ENVIAR
-                </a>
+                </button>
             </div>
-        <div class="slider__btn slider__btn--right">&#60</div>
-        <div class="slider__btn slider__btn--left">&#62</div>
+            <div id="listingTable"></div>
+            <a href="javascript:prevPage()" id="btn_prev">Atras</a>
+            <a href="javascript:nextPage()" id="btn_next">Siguiente</a>
+            page: <span id="page"></span>
     </div>
 
     <div class="wrapper">
@@ -103,29 +106,96 @@
             </div>
         </div>
     </div>
-    <div class="two columns u-pull-right">
-        <ul>
-            <li class="submenu">
-                <div id="carrito">
-                    <p class="vacio">Pedido vacio</p>
-                    <table id="lista-carrito" class="u-full-width">
-                        <thead>
-                            <tr>
-                                <th>Imagen</th>
-                                <th>Platillos</th>
-                                <th>Precio</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            
-                        </tbody>
-                    </table>
-                    <a href="#" id="vaciar-carrito"
-                    class="button u-full-width">vaciar carrito</a>
+    <!-- END SECTION STORE -->
+    <!-- START SECTION SHOPPING CART -->
+    <section class="shopping-cart">
+        <div class="container">
+            <h1 class="text-center">Orden de Pedido</h1>
+            <hr>
+            <div class="row">
+                <div class="col-6">
+                    <div class="shopping-cart-header">
+                        <h6>Producto</h6>
+                    </div>
                 </div>
-            </li>
-        </ul>
-    </div>
-        <script src="js/app.js"></script>
+                <div class="col-2">
+                    <div class="shopping-cart-header">
+                        <h6 class="text-truncate">Precio</h6>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="shopping-cart-header">
+                        <h6>Cantidad</h6>
+                    </div>
+                </div>
+            </div>
+            <!-- ? START SHOPPING CART ITEMS -->
+            <div class="shopping-cart-items shoppingCartItemsContainer">
+            </div>
+            <!-- ? END SHOPPING CART ITEMS -->
+
+            <!-- START TOTAL -->
+            <div class="row">
+                <div class="col-12">
+                    <div class="shopping-cart-total d-flex align-items-center">
+                        <p class="mb-0">Total</p>
+                        <p class="ml-4 mb-0 shoppingCartTotal">S/0</p>
+                        <div class="toast ml-auto bg-info" role="alert" aria-live="assertive" aria-atomic="true"
+                            data-delay="2000">
+                            <div class="toast-header">
+                                <span>✅</span>
+                                <strong class="mr-auto ml-1 text-secondary">Elemento en el carrito</strong>
+                                <button type="button" class="ml-2 mb-1 close" data-dismiss="toast" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="toast-body text-white">
+                                Se aumentó correctamente la cantidad
+                            </div>
+                        </div>
+                        <button class="btn btn-success ml-auto comprarButton" type="button" data-toggle="modal"
+                            data-target="#comprarModal">Comprar</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- END TOTAL -->
+
+            <!-- START MODAL COMPRA -->
+            <div class="modal fade" id="comprarModal" tabindex="-1" aria-labelledby="comprarModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="comprarModalLabel">Gracias por su compra</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <p>Pronto recibirá su pedido</p>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- END MODAL COMPRA -->
+        </div>
+    </section>
+    <!-- SCRIPTS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+    integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+    crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+    integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+    crossorigin="anonymous"></script>
+
+    <script src="tienda.js"></script>
+    <script src="vermas.js"></script>
 </body>
 </html>

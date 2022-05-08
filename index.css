@@ -124,7 +124,7 @@ body{
 }
 .wrapper .sidebar{
     position: relative;
-    top: -995px;
+    top: -895px;
     width: 250px;
     height: 1px;
     background:#fff;
@@ -202,58 +202,44 @@ body{
 }
 
 /*Orden de Pedido*/
-.u-full-width {
-    width: 100%;
-    box-sizing: border-box;
+/* ? SHOPPING CART */
+.container{
+    margin-left: 1200px;
+    top: -895px;
 }
-.button {
-    background-color: #fbaf32;
-    color: rgb(255, 255, 255);
+.text-center{
+    margin-right: 500px;
+    max-width:100%;
 }
-.agregar-carrito{
-    margin: 10px 0;
+.hr{
+    height:5px;
 }
-ul{
-    list-style: none;
+.row{
+    max-width: 60%;
 }
-.submenu {
-    position: relative;
-    margin-left: 550px;
-    top:-580px
+.shopping-cart-items {
+    padding: 10px 0px;
 }
-.submenu #carrito{
-    display: inline-block;
-    cursor: pointer;
+  
+.shopping-cart-header {
+    border-bottom: 1px solid #ccc;
 }
-.vacio {
-    padding: 10px;
-    background-color: #fbaf32;
-    text-align: center;
-    border-radius: 10px;
-    color: rgb(255, 255, 255);
+  
+.shopping-cart-image {
+    max-width: 15px;
+    border-radius: 20px;
+}
+  
+.shopping-cart-quantity-input {
+    max-width: 45px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background: #eee;
+    padding: 5px;
 }
 
-/*Button Pagar*/
-button{
-    background:#ad1cb8;
-    display: inline-block;
-    cursor: pointer;
-    margin-left: 1345px;
-    position:absolute;
-    top: 515px;
-    padding: 15px 30px;
-    color: #fff;
-    letter-spacing: 4px;
-    font-size:14px;
-    text-decoration: none;
-    overflow: hidden;
-    transition: 0.2s;
-}
-button:hover{
-    background: #27ae60;
-    box-shadow: 0 0 1px #27ae60, 0 0 40px
-    #27ae60, 0 0 15px #27ae60;
-    transition-delay:.1s;
+.shopping-cart-total {
+    min-height: 96px;
 }
 .order-actions{
     margin-left:50px;
@@ -261,26 +247,6 @@ button:hover{
 p{
     text-align:center;
 }
-.btn-borrar{
-    background: rgb(243, 18, 18);
-    color: #fff;
-    width: 90px;
-    height:50px;
-    top:14px;
-    margin: 14px;
-    font-weight: bold;
-    border-radius: 8px;
-}
-.btn-confirmar{
-    background: rgb(45, 140, 228);
-    color: #fff;
-    width: 90px;
-    height:50px;
-    margin: 14px;
-    font-weight: bold;
-    border-radius: 8px;
-}
-
 /*SLIDER button*/
 .slider__btn{
     display: inline-block;
