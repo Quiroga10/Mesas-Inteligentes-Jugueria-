@@ -96,8 +96,8 @@ body{
         font-size:50%;
     }
 }
-/* BOTONES DEL MENU PRINCIPAL */
-.btn-neon{
+/* BOTONES DEL MENU PRINCIPAL
+.button{
     position: relative;
     background:#27ae60;
     display: inline-block;
@@ -110,12 +110,13 @@ body{
     overflow: hidden;
     transition: 0.2s;
 }
-.btn-neon:hover{
+.button:hover{
     background: #a945c7;
     box-shadow: 0 0 1px #a945c7, 0 0 40px
     #a945c7, 0 0 15px #a945c7;
     transition-delay:.1s;
 }
+*/
 
 /* SIDEBAR - MENU LATERAL */
 .wrapper{
@@ -124,19 +125,13 @@ body{
 }
 .wrapper .sidebar{
     position: relative;
-    top: -895px;
+    top: -795px;
     width: 250px;
     height: 1px;
-    background:#fff;
+    background:#ffffff;
     margin-left: -280px;
     padding: 0px 0;
 
-}
-.wrapper .sidebar h2{
-    color: #444;
-    text-transform: uppercase;
-    text-align: center;
-    margin-bottom: 30px;
 }
 .wrapper .sidebar ul li{
     padding:15px;
@@ -163,7 +158,7 @@ body{
 }
 .wrapper .sidebar .social_media{
     position: absolute;
-    bottom: -1000px;
+    bottom: -750px;
     left: 95%;
     transform: translateX(-90%);
     display:flex;
@@ -205,14 +200,19 @@ body{
 /* ? SHOPPING CART */
 .container{
     margin-left: 1200px;
-    top: -895px;
+    margin-top: -880px;
 }
 .text-center{
     margin-right: 500px;
     max-width:100%;
 }
-.hr{
-    height:5px;
+hr {
+    margin-left: 0;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    max-width: 640px;
+    border-top-style: solid;
+    border-top-color: rgba(0, 0, 0, 0.1);
 }
 .row{
     max-width: 60%;
