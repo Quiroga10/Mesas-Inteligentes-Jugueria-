@@ -10,6 +10,10 @@
     <title>Mesa Inteligente Jugueria de</title>
 </head>
 <body>
+    <nav>
+        <img src="icon_menu.svg" alt="menu" class="menu">
+        <img src="icon_shopping_cart.svg" alt="shopping cart" class="shopping-cart">
+    </nav>
     <div class="container_logo">
         <img src="logo.png">
     </div>
@@ -80,10 +84,6 @@
                     ENVIAR
                 </button>
             </div>
-            <div id="listingTable"></div>
-            <a href="javascript:prevPage()" id="btn_prev">Atras</a>
-            <a href="javascript:nextPage()" id="btn_next">Siguiente</a>
-            page: <span id="page"></span>
     </div>
 
     <div class="wrapper">
@@ -96,6 +96,7 @@
                 <li><a href="#" category="Sandwich"><img class="ico" src="sandwich.png"><br>Sandwich</a></li>
                 <li><a href="#" category="Psotres"><img class="ico" src="postres.png"><br>Postres</a></li>
                 <li><a href="#" category="Galletas"><img class="ico" src="galletas.png"><br>Galletas</a></li>
+                <li><a href="#" category="Estractos"><img class="ico" src="jugos_estractos.png"><br>Estractos</a></li>
             </ul>
             <div class="social_media">
                 <a href="#"><img class="ico" src="facebook.png"></a>
@@ -142,5 +143,30 @@
     integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
     crossorigin="anonymous"></script>
     <script src="agregarProducto.js"></script>
+    <!-- SCRIPT FIREBASE -->
+    <script type="module">
+        // Import the functions you need from the SDKs you need
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/9.8.1/firebase-app.js";
+        import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.8.1/firebase-analytics.js";
+        // TODO: Add SDKs for Firebase products that you want to use
+        // https://firebase.google.com/docs/web/setup#available-libraries
+      
+        // Your web app's Firebase configuration
+        // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+        const firebaseConfig = {
+          apiKey: "AIzaSyBBwG2Tk2bi_IMChAVgb1cq5CsedZCIRpM",
+          authDomain: "mesa-inteligente-jugueria.firebaseapp.com",
+          databaseURL: "https://mesa-inteligente-jugueria-default-rtdb.firebaseio.com",
+          projectId: "mesa-inteligente-jugueria",
+          storageBucket: "mesa-inteligente-jugueria.appspot.com",
+          messagingSenderId: "716803130485",
+          appId: "1:716803130485:web:d4d8950afe6de0e7d5643c",
+          measurementId: "G-4B05X5539H"
+        };
+      
+        // Initialize Firebase
+        const app = initializeApp(firebaseConfig);
+        const analytics = getAnalytics(app);
+      </script>
 </body>
 </html>

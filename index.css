@@ -16,6 +16,18 @@ body{
     max-width:90%;
     background-color: #fff;
 }
+nav{
+    display:none;
+    justify-content: space-between;
+    padding: 15px 24px;
+    border-bottom: 1px solid var(--very-light-pink);
+}
+nav .menu{
+    height:2rem;
+}
+nav .shopping-cart{
+    height:2rem;
+}
 /* LOGO JUGUERIA */
 .container_logo{
     max-width: 90%;
@@ -31,7 +43,7 @@ body{
     /* background: #eee; */
     margin-left:350px;
     position: relative;
-    bottom: -30px;
+    bottom: -150px;
 }
 .menu_principal .titulo_catalogo{
     font-size:3.5rem;
@@ -80,22 +92,6 @@ body{
     font-size: 2rem;
     color: #444;
 }
-
-@media (max-width:991px) {
-    html{
-        font-size:55%;
-    }
-}
-@media (max-width:768px){
-    img{
-        height:25rem;
-    }
-}
-@media (max-width:450px){
-    html{
-        font-size:50%;
-    }
-}
 /* BOTONES DEL MENU PRINCIPAL
 .button{
     position: relative;
@@ -125,7 +121,7 @@ body{
 }
 .wrapper .sidebar{
     position: relative;
-    top: -775px;
+    top: -795px;
     width: 250px;
     height: 1px;
     background:#ffffff;
@@ -175,27 +171,6 @@ body{
     border-top-right-radius: 5px;
     border-top-left-radius: 5px;
 }
-@media (max-width: 2560px) {
-    html{
-        font-size:75%;
-    }
-}
-@media (max-width:1336px) {
-    .wrapper .sidebar{
-        top: -959px;
-        height: 930px;
-    }
-    .menu_principal .productos-container .producto img{
-        height:10rem;
-    }
-}
-@media (max-width:1025px){
-    .wrapper .sidebar{
-        top: -1989px;
-        height: 900px;
-    }
-}
-
 /*Orden de Pedido*/
 /* ? SHOPPING CART */
 .container{
@@ -247,61 +222,6 @@ hr {
 p{
     text-align:center;
 }
-/*Boton delete*/
-.li-container {
-    background-color: white;
-    width: 100%;
-    color: darkslategray;
-    margin-top: 20px;
-}
-
-ul {
-    padding: 0;
-}
-
-li {
-    list-style: none;
-    background-color: lightgray;
-    border-radius: 10px;
-    margin-top: 15px;
-    display: flex;
-  }
-
-li p {
-    margin: 0;
-    padding: 15px;
-    width: 100%;
-}
-
-.btn-delete {
-    margin-left: auto;
-    border: none;
-    background-color: #e31746;
-    color: white;
-    font-weight: bold;
-    padding: 5px 10px;
-    outline: none;
-    border-top-right-radius: 10px;
-    border-bottom-right-radius: 10px;
-    width: 10%;
-    font-size: 1.2em;
-  }
-  
-  .btn-delete:hover {
-    cursor: pointer;
-    background-color: lightseagreen;
-  }
-  
-  .btn-add {
-    padding: 5px 15px;
-    border: none;
-    color: white;
-    font-family: fantasy;
-    background-color: teal;
-    font-size: 1.4rem;
-    outline: none;
-  }
-  
 /* SLIDER button*/
 .slider__btn{
     display: inline-block;
@@ -327,4 +247,91 @@ li p {
 .slider__btn--right {
     right:10px;
     background:#827e7e;
-}   
+}
+/*MEDIA QUERY*/
+@media (max-width:450px){
+    html{
+        font-size:50%;
+    }
+}
+@media (max-width:991px) {
+    html{
+        font-size:55%;
+    }
+}
+@media (max-width:768px){
+    img{
+        height:25rem;
+    }
+}
+@media (max-width:640px){
+    nav{
+        display:block;
+        width:10px;
+        height:10px;
+    }
+    nav .shopping-cart{
+        margin-top: -42px;
+        margin-left:449px;
+
+    }
+    .wrapper{
+        display:none;
+    }
+    .container{
+        display:none;
+    }
+    img{
+        height:10rem;
+        margin-right: 8px;
+    }
+    .container_logo{
+        top: 18px;
+        margin-left: 194px;
+    }
+    .menu_principal{
+        max-width: 462px;
+        margin: -31px;
+        bottom: -183px;
+        padding: 0;
+    }
+    .menu_principal .titulo_catalogo{
+        display: none;
+    }
+    .menu_principal .productos-container{  display:grid;
+       grid-template-columns: repeat(auto-fit, minmax(8rem,1fr));
+       gap:32px;
+       margin-left: 50px;
+       margin-right: -50px;
+    }
+    .menu_principal .productos-container .producto{
+        width: 160px;
+    }
+    .menu_principal .productos-container .producto img{
+        width: 107px;
+        object-fit:cover;
+    }
+    .menu_principal .productos-container .producto h3{
+        font-size:15px;
+    }
+}
+@media (max-width: 2560px) {
+    html{
+        font-size:75%;
+    }
+}
+@media (max-width:1336px) {
+    .wrapper .sidebar{
+        top: -959px;
+        height: 930px;
+    }
+    .menu_principal .productos-container .producto img{
+        height:10rem;
+    }
+}
+@media (max-width:1025px){
+    .wrapper .sidebar{
+        top: -1989px;
+        height: 900px;
+    }
+}
