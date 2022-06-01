@@ -51,7 +51,8 @@ nav .shopping-cart{
 }
 /* MENU PRINCIPAL */
 .menu_principal {
-    max-width: 1200px;
+    max-width:1320px;
+    /* max-width: 1200px; */
     margin: 50px auto 0px 350px;
     padding: 0rem 2rem;
     position: relative;
@@ -134,7 +135,8 @@ nav .shopping-cart{
 }
 .wrapper .sidebar{
     position: relative;
-    top: -893px;
+    top: -510px;;
+    /* top: -893px; */
     width: 250px;
     height: 1px;
     background:#ffffff;
@@ -187,8 +189,8 @@ nav .shopping-cart{
 /*Orden de Pedido*/
 /* ? SHOPPING CART */
 .container{
-    margin-left: 1200px;
-    margin-top: -880px;
+    margin-left: 1333px;;
+    margin-top: -539px;;
 }
 .text-center{
     margin-right: 500px;
