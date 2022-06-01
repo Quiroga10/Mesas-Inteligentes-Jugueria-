@@ -225,7 +225,7 @@
         <div>
             <a href="javascript:prevPage()" id="btn_prev" class="prev">prev</a>&nbsp;&nbsp;
             <a href="javascript:nextPage()" id="btn_next" class="next">next</a>
-            page: <span class="page"    id="page"></span>
+            <!-- page: <span class="page" id="page"></span> -->
         </div>
 
         <div class="wrapper">
@@ -257,7 +257,7 @@
                     </tbody>
                     <div class="li-container">
                         <ul>
-
+                            
                         </ul>
                     </div>
                     <th scope="col" class="montoTotal">Monto Total:</th>
@@ -435,7 +435,6 @@
 
             window.onload = async () => {
                 const sidebar = document.querySelector(".sidebar");
-
                 await pintarCategorias(sidebar);
                 await pintarProductosXCategoria();
                 await obtenerTodosProductos();
